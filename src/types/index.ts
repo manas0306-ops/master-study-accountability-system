@@ -1,4 +1,4 @@
-export type PriorityLevel = 'maintain' | 'improve' | 'high' | 'critical';
+export type PriorityLevel = 'maintain' | 'improve' | 'medium' | 'high' | 'critical';
 
 export type TaskStatus = 
   | 'not-started' 
