@@ -1,0 +1,271 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================================
+   THEME DEFINITIONS: 5 DAY + 5 NIGHT PALETTES
+   ======================================================== */
+
+/* 1. SAKURA BLOSSOM (Day) */
+[data-theme='sakura-day'] {
+  --bg-base: #FFF5F7;
+  --bg-surface: #FFFFFF;
+  --bg-elevated: #FFE4E6;
+  --bg-muted: #FFF1F2;
+  --border-color: #FECDD3;
+  --border-subtle: #FFE4E6;
+  --text-primary: #4C0519;
+  --text-secondary: #9F1239;
+  --text-muted: #BE123C;
+  --accent-primary: #E11D48;
+  --accent-hover: #BE123C;
+  --accent-light: rgba(225, 29, 72, 0.15);
+  --accent-ring: rgba(225, 29, 72, 0.35);
+  --shadow-color: rgba(225, 29, 72, 0.08);
+  --heat-0: #FFE4E6;
+  --heat-1: #FDA4AF;
+  --heat-2: #FB7185;
+  --heat-3: #F43F5E;
+  --heat-4: #9F1239;
+}
+
+/* 2. MATCHA MOCHI (Day) */
+[data-theme='matcha-day'] {
+  --bg-base: #F4F7F4;
+  --bg-surface: #FFFFFF;
+  --bg-elevated: #E8EFE8;
+  --bg-muted: #F0F4F0;
+  --border-color: #C8DBC8;
+  --border-subtle: #DCEDDC;
+  --text-primary: #14532D;
+  --text-secondary: #166534;
+  --text-muted: #4D7C0F;
+  --accent-primary: #16A34A;
+  --accent-hover: #15803D;
+  --accent-light: rgba(22, 163, 74, 0.15);
+  --accent-ring: rgba(22, 163, 74, 0.35);
+  --shadow-color: rgba(20, 83, 45, 0.08);
+  --heat-0: #DCFCE7;
+  --heat-1: #86EFAC;
+  --heat-2: #4ADE80;
+  --heat-3: #16A34A;
+  --heat-4: #14532D;
+}
+
+/* 3. AMBER SUNBURST (Day) */
+[data-theme='amber-day'] {
+  --bg-base: #FFFBEB;
+  --bg-surface: #FFFFFF;
+  --bg-elevated: #FEF3C7;
+  --bg-muted: #FDE68A;
+  --border-color: #FCD34D;
+  --border-subtle: #FDE68A;
+  --text-primary: #78350F;
+  --text-secondary: #92400E;
+  --text-muted: #B45309;
+  --accent-primary: #D97706;
+  --accent-hover: #B45309;
+  --accent-light: rgba(217, 119, 6, 0.15);
+  --accent-ring: rgba(217, 119, 6, 0.35);
+  --shadow-color: rgba(146, 64, 14, 0.08);
+  --heat-0: #FEF3C7;
+  --heat-1: #FDE68A;
+  --heat-2: #FBBF24;
+  --heat-3: #D97706;
+  --heat-4: #78350F;
+}
+
+/* 4. NORDIC AZURE (Day) */
+[data-theme='azure-day'] {
+  --bg-base: #F0F9FF;
+  --bg-surface: #FFFFFF;
+  --bg-elevated: #E0F2FE;
+  --bg-muted: #BAE6FD;
+  --border-color: #7DD3FC;
+  --border-subtle: #BAE6FD;
+  --text-primary: #0C4A6E;
+  --text-secondary: #0369A1;
+  --text-muted: #0284C7;
+  --accent-primary: #0284C7;
+  --accent-hover: #0369A1;
+  --accent-light: rgba(2, 132, 199, 0.15);
+  --accent-ring: rgba(2, 132, 199, 0.35);
+  --shadow-color: rgba(3, 105, 161, 0.08);
+  --heat-0: #E0F2FE;
+  --heat-1: #7DD3FC;
+  --heat-2: #38BDF8;
+  --heat-3: #0284C7;
+  --heat-4: #0C4A6E;
+}
+
+/* 5. STRAWBERRY MILK (Day) */
+[data-theme='strawberry-day'] {
+  --bg-base: #FDF2F8;
+  --bg-surface: #FFFFFF;
+  --bg-elevated: #FCE7F3;
+  --bg-muted: #FBCFE8;
+  --border-color: #F472B6;
+  --border-subtle: #FBCFE8;
+  --text-primary: #831843;
+  --text-secondary: #9D174D;
+  --text-muted: #BE185D;
+  --accent-primary: #EC4899;
+  --accent-hover: #DB2777;
+  --accent-light: rgba(236, 72, 153, 0.15);
+  --accent-ring: rgba(236, 72, 153, 0.35);
+  --shadow-color: rgba(131, 24, 67, 0.08);
+  --heat-0: #FCE7F3;
+  --heat-1: #F9A8D4;
+  --heat-2: #F472B6;
+  --heat-3: #DB2777;
+  --heat-4: #831843;
+}
+
+/* 6. COSMIC TWILIGHT (Night) */
+[data-theme='cosmic-night'] {
+  --bg-base: #0B0F19;
+  --bg-surface: #111827;
+  --bg-elevated: #1F2937;
+  --bg-muted: #1E293B;
+  --border-color: #374151;
+  --border-subtle: #1F2937;
+  --text-primary: #F9FAFB;
+  --text-secondary: #D1D5DB;
+  --text-muted: #9CA3AF;
+  --accent-primary: #8B5CF6;
+  --accent-hover: #7C3AED;
+  --accent-light: rgba(139, 92, 246, 0.2);
+  --accent-ring: rgba(139, 92, 246, 0.4);
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --heat-0: #1F2937;
+  --heat-1: #4C1D95;
+  --heat-2: #6D28D9;
+  --heat-3: #8B5CF6;
+  --heat-4: #A78BFA;
+}
+
+/* 7. CYBER SYNTHWAVE (Night) */
+[data-theme='synthwave-night'] {
+  --bg-base: #0D091A;
+  --bg-surface: #1A122E;
+  --bg-elevated: #281A45;
+  --bg-muted: #201538;
+  --border-color: #4C2E85;
+  --border-subtle: #2F1E54;
+  --text-primary: #FDF2F8;
+  --text-secondary: #F472B6;
+  --text-muted: #C084FC;
+  --accent-primary: #F43F5E;
+  --accent-hover: #E11D48;
+  --accent-light: rgba(244, 63, 94, 0.25);
+  --accent-ring: rgba(244, 63, 94, 0.45);
+  --shadow-color: rgba(244, 63, 94, 0.15);
+  --heat-0: #201538;
+  --heat-1: #701A75;
+  --heat-2: #C026D3;
+  --heat-3: #F43F5E;
+  --heat-4: #06B6D4;
+}
+
+/* 8. OBSIDIAN DRACULA (Night) */
+[data-theme='dracula-night'] {
+  --bg-base: #1E1F29;
+  --bg-surface: #282A36;
+  --bg-elevated: #383A59;
+  --bg-muted: #2E303E;
+  --border-color: #44475A;
+  --border-subtle: #383A59;
+  --text-primary: #F8F8F2;
+  --text-secondary: #BD93F9;
+  --text-muted: #6272A4;
+  --accent-primary: #BD93F9;
+  --accent-hover: #A067E6;
+  --accent-light: rgba(189, 147, 249, 0.2);
+  --accent-ring: rgba(189, 147, 249, 0.4);
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --heat-0: #383A59;
+  --heat-1: #6272A4;
+  --heat-2: #8BE9FD;
+  --heat-3: #50FA7B;
+  --heat-4: #BD93F9;
+}
+
+/* 9. MIDNIGHT FOREST (Night) */
+[data-theme='emerald-night'] {
+  --bg-base: #06130E;
+  --bg-surface: #0A2018;
+  --bg-elevated: #113327;
+  --bg-muted: #0D281E;
+  --border-color: #174E3B;
+  --border-subtle: #0F3829;
+  --text-primary: #ECFDF5;
+  --text-secondary: #A7F3D0;
+  --text-muted: #6EE7B7;
+  --accent-primary: #10B981;
+  --accent-hover: #059669;
+  --accent-light: rgba(16, 185, 129, 0.2);
+  --accent-ring: rgba(16, 185, 129, 0.4);
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --heat-0: #0D281E;
+  --heat-1: #065F46;
+  --heat-2: #059669;
+  --heat-3: #10B981;
+  --heat-4: #34D399;
+}
+
+/* 10. ESPRESSO NOIR (Night) */
+[data-theme='espresso-night'] {
+  --bg-base: #14100E;
+  --bg-surface: #211B17;
+  --bg-elevated: #2E2520;
+  --bg-muted: #241D19;
+  --border-color: #443730;
+  --border-subtle: #302621;
+  --text-primary: #FEF3C7;
+  --text-secondary: #FDE68A;
+  --text-muted: #D97706;
+  --accent-primary: #F59E0B;
+  --accent-hover: #D97706;
+  --accent-light: rgba(245, 158, 11, 0.2);
+  --accent-ring: rgba(245, 158, 11, 0.4);
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --heat-0: #241D19;
+  --heat-1: #78350F;
+  --heat-2: #B45309;
+  --heat-3: #D97706;
+  --heat-4: #F59E0B;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+/* Glassmorphism helpers */
+.glass-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px -2px var(--shadow-color);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+}
+
+.glass-card-hover {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -4px var(--shadow-color);
+  border-color: var(--accent-primary);
+}
